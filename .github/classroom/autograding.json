@@ -1,0 +1,164 @@
+{
+  "tests": [
+    {
+      "name": "Exercicio1.html tem sintaxe html correta",
+      "setup": "npm install html-validate --silent > out",
+      "run": "node node_modules/html-validate/bin/html-validate.js Exercicio1.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exercicio1.html] Há um input obrigatório de email com name 'email'",
+      "setup": "",
+      "run": "grep -Piq \"(?=.*?input)(?=.*?type.*email)(?=.*?name.*email)(?=.*?required).*\" Exercicio1.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exercicio1.html] Há um input obrigatório de senha com name 'senha'",
+      "setup": "",
+      "run": "grep -Piq \"(?=.*?input)(?=.*?type.*password)(?=.*?name.*senha)(?=.*?required).*\" Exercicio1.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exercicio1.html] Há um checkbox com o texto 'Lembre-se de mim' com name 'lembrar' e value 'S'",
+      "setup": "",
+      "run": "grep -Piq \"(?=.*?input)(?=.*?type.*checkbox)(?=.*?name.*lembrar)(?=.*?value.*S).*\" Exercicio1.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exercicio1.html] Há um button com o texto 'Entrar'",
+      "setup": "",
+      "run": "grep -Piq \"(?=.*?button)(?=.*?type.*submit)(?=.*?form.*form1).*\" Exercicio1.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Exercicio2.html tem sintaxe html correta",
+      "setup": "npm install html-validate --silent > out",
+      "run": "node node_modules/html-validate/bin/html-validate.js Exercicio2.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exercicio2.html] Há um input obrigatório de email com name 'email'",
+      "setup": "",
+      "run": "grep -Piq \"(?=.*?input)(?=.*?type.*email)(?=.*?name.*email)(?=.*?required).*\" Exercicio2.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exercicio2.html] Há uma caixa de seleção obrigatória de assunto com name 'assunto'",
+      "setup": "",
+      "run": "grep -Piq \"(?=.*?select)(?=.*?name.*assunto)(?=.*?required).*\" Exercicio2.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exercicio2.html] Há uma caixa de texto de múltiplas linhas obrigatória com name 'mensagem'",
+      "setup": "",
+      "run": "grep -Piq \"(?=.*?required)(?=.*?textarea)(?=.*?name.*mensagem).*\" Exercicio2.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exercicio2.html] Há um button com o texto 'Enviar'",
+      "setup": "",
+      "run": "grep -Piq \"(?=.*?button)(?=.*?type.*submit)(?=.*?form.*form2).*\" Exercicio2.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Exercicio3.html tem sintaxe html correta",
+      "setup": "npm install html-validate --silent > out",
+      "run": "node node_modules/html-validate/bin/html-validate.js Exercicio3.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exercicio3.html] Há um input obrigatório de data com name 'nascimento'",
+      "setup": "",
+      "run": "grep -Piq \"(?=.*?input)(?=.*?type.*date)(?=.*?name.*nascimento)(?=.*?required).*\" Exercicio3.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exercicio3.html] Há um input de url com name 'github'",
+      "setup": "",
+      "run": "grep -Piq \"(?=.*?input)(?=.*?type.*url)(?=.*?name.*github).*\" Exercicio3.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Exercicio4.html tem sintaxe html correta",
+      "setup": "npm install html-validate --silent > out",
+      "run": "node node_modules/html-validate/bin/html-validate.js Exercicio4.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exercicio4.html] Há um input de endereço obrigatório com name 'rua' e tamanho máximo de 100 caracteres",
+      "setup": "",
+      "run": "grep -Piq \"(?=.*?required)(?=.*?input)(?=.*?maxlength.*100)(?=.*?type.*text)(?=.*?name.*rua).*\" Exercicio4.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Exercicio5.html tem sintaxe html correta",
+      "setup": "npm install html-validate --silent > out",
+      "run": "node node_modules/html-validate/bin/html-validate.js Exercicio5.html",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "htmlvalidate:recommended"
+  ],
+ 
+  "rules": {
+    "element-required-attributes": "off",
+    "void-style": "off",
+    "no-trailing-whitespace": "off",
+    "prefer-tbody": "off"
+  }
+}
