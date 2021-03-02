@@ -16,7 +16,42 @@
         Use o nome de campo 'tipo-resposta'.
         -- Botão de Submissão: deve possuir o texto Enviar.
     -->
-    <form id="form2"></form>
+    <form id="form2">
+      <p>
+        <label for= "email">Email:</label>
+        <input id= "email" type="email" name="email"required>
+      </p>
+
+      <p>
+        <label for= "assunto">Assunto:</label>
+        <select name="assunto" id="assunto" required>
+          <option value="">Escolha uma opção</option>
+          <option value="P">Problemas</option>
+          <option value="R">Reclamação</option>
+          <option value="S">Sugestão</option>
+        </select>
+      </p>
+      <p>
+        <label for= "mensagem">Email:</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+      </p>
+      <p>
+        Tipo de Resposta
+
+        <label for= "telefone">Telefone:</label>
+        <input id= "telefone" type="checkbox" name="tipo-resposta" value="T">
+
+        <label for= "email-checkbox">Email:</label>
+        <input id= "email-checkbox" type="checkbox" name="tipo-resposta" value="E">
+
+        <label for= "correio">Correio:</label>
+        <input id= "correio" type="checkbox" name="tipo-resposta" value="C">
+      </p>
+      <p>
+        <button type="submit" form="form2">Enviar</button>
+      </p>
+
+    </form>
 </body>
 </html>
 
