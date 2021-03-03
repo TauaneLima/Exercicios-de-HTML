@@ -18,17 +18,17 @@
     <form id="form3"></form>
     <p>
       <label for= "nome-completo">Nome Completo:</label>
-      <input id= "nome-completo" type= "text" name= "nome-completo"required>
+      <input id= "nome-completo" type= "text" name= "nome-completo" maxlength="120" required>
     </p>
 
     <p>
       <label for= "nascimento">Nascimento:</label>
-      <input id= "nascimento" type= "date" name= "nascimento"required>
+      <input id= "nascimento" type= "date" name= "nascimento" required>
     </p>
 
     <p>
       <label for= "github">Perfil Github:</label>
-      <input id= "github" type= "url" name= "github"required>
+      <input id= "github" type= "url" name= "github" required>
     </p>
 
     <p>
@@ -38,10 +38,12 @@
         <option value="M">Masculino</option>
         <option value="F">Feminino</option>
       </select>
-    </p>
+  </p>
+
     <p>
       <button type="submit" form="form3">Salvar</button>
     </p>
+
 </body>
 </html>
 
